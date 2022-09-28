@@ -1,5 +1,6 @@
 :root{
     --ps-gray: #363636;
+    --ps-dark-gray: #1F1F1F;
     --ps-red: #cd3d0f;
     --ps-blue: #2D64E6;
     --ps-dark-blue: #161c3b;
@@ -65,23 +66,26 @@ img{max-width: 100%;}
 }
 
 .playstation5-products{
-
+    flex-wrap: wrap;
 }
 
 .product{
-    border: 1px solid black;
     width: calc(100% / 5);
 }
 
-@media (max-width: 576px){
+.product-selected{
+    border-bottom: 5px solid var(--ps-blue);
+}
 
-    .playstation-showcase{
-        flex-wrap: wrap;
-    }
+.product-unselected:not(:hover){
+    filter: opacity(75%);
+}
 
-    .playstation5-products{
-        flex-wrap: wrap;
-    }
+.nuove-uscite{
+    background-color: var(--ps-dark-gray);
+}
+
+@media screen and (max-width: 760px){
 
     .product{
         width: calc(100% / 3);
