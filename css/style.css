@@ -1,11 +1,15 @@
 :root{
     --ps-gray: #363636;
     --ps-red: #cd3d0f;
-    --ps-blue: #00439c;
+    --ps-blue: #2D64E6;
     --ps-dark-blue: #161c3b;
 }
 
-*{padding: 0;margin: 0;box-sizing: border-box;}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 img{max-width: 100%;}
 
@@ -21,6 +25,10 @@ img{max-width: 100%;}
     background-color: var(--ps-red);
 }
 
+.bg_ps_blue{
+    background-color: var(--ps-blue);
+}
+
 .jumbotron{
     background-color: var(--ps-blue);
     height: 40rem;
@@ -29,4 +37,53 @@ img{max-width: 100%;}
 .acquista-ora{
     width: 9rem;
     text-align: center;
+}
+
+.w-550-px{
+    max-width: 550px;
+}
+
+.w-95{
+    width: 95vw;
+}
+
+.c-ps-blue{
+    color: var(--ps-blue);
+}
+
+.mt-8rem{
+    margin-top: 8rem;
+}
+
+.fs-3-5rem{
+    font-size: 3.5rem;
+}
+
+.game{
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.playstation5-products{
+
+}
+
+.product{
+    border: 1px solid black;
+    width: calc(100% / 5);
+}
+
+@media (max-width: 576px){
+
+    .playstation-showcase{
+        flex-wrap: wrap;
+    }
+
+    .playstation5-products{
+        flex-wrap: wrap;
+    }
+
+    .product{
+        width: calc(100% / 3);
+    }
 }
