@@ -1,0 +1,15 @@
+:root{
+    --ps-gray: #363636;
+}
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+img{max-width: 100%;}
+
+.sony-logo{
+    width: 6rem;
+}
+
+.bg_ps_gray{
+    background-color: var(--ps-gray);
+}
