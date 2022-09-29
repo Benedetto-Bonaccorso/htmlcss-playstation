@@ -26,6 +26,10 @@ img{max-width: 100%;}
     width: 6rem;
 }
 
+.nav-links{
+    display: flex;
+}
+
 .bg_ps_gray{
     background-color: var(--ps-gray);
 }
@@ -42,7 +46,18 @@ img{max-width: 100%;}
     background-color: var(--ps-lighter-gray);
 }
 
+.jumbo-returnal{
+    background-image: url("../img/jumbo-bg.png");
+}
+
+.jumbo-ittakestwo{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+}
+
 .jumbotron{
+    background-color: #fefff1;
+    background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+    background-repeat:no-repeat;
     background-color: var(--ps-blue);
     height: 40rem;
 }
@@ -122,6 +137,7 @@ img{max-width: 100%;}
     background-color: var(--ps-even-lighter-gray);
 }
 
+
 .twitter,
 .facebook,
 .instagram,
@@ -140,14 +156,70 @@ img{max-width: 100%;}
 }
 
 .instagram{
-    background-color: #1F1F1F;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .youtube{
     background-color: var(--youtube);
 }
 
-@media screen and (max-width: 770px){
+.play-logo{
+    width: 11rem;
+    filter: saturate(0%) brightness(0%) invert(100%);
+}
+
+footer{
+    background-color: var(--ps-blue);
+}
+
+.footer-markup{
+    display: flex;
+    flex-direction: column;
+}
+
+.visible-xl,
+.nav-links,
+.nav-user{
+    display: none;
+}
+
+.visible-lg{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media (min-width: 1200px){
+
+    .nav-menu{
+        display: none;
+    }
+
+    .visible-xl{
+        display: block;
+    }
+
+    .nav-links,
+    .nav-user{
+        display: flex;
+    }
+
+    .visible-lg{
+        display: none;
+    }
+
+    .footer-markup{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px){
 
     .ps-plus-image,
     .ps-now-image{
@@ -156,5 +228,29 @@ img{max-width: 100%;}
 
     .product{
         width: calc(100% / 3);
+    }
+
+    .footer-markup{
+        flex-direction: column;
+    }
+
+    .footer-right{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+
+    .social-links{
+        flex-wrap: wrap;
+    }
+
+    .twitter,
+    .facebook,
+    .instagram,
+    .youtube{
+        width: 12rem;
+        height: 12rem;
+        font-size: 140px;
     }
 }
