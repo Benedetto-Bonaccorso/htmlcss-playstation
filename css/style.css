@@ -1,9 +1,17 @@
 :root{
+    --ps-even-lighter-gray: #F5F5F5;
+    --ps-lighter-gray: #D9DADC;
+    --ps-light-gray: #BEBCBB;
     --ps-gray: #363636;
     --ps-dark-gray: #1F1F1F;
     --ps-red: #cd3d0f;
     --ps-blue: #2D64E6;
     --ps-dark-blue: #161c3b;
+
+    --twitter:#1DA1F3;
+    --facebook: #1878F3;
+
+    --youtube:#C5312C;
 }
 
 *{
@@ -28,6 +36,10 @@ img{max-width: 100%;}
 
 .bg_ps_blue{
     background-color: var(--ps-blue);
+}
+
+.bg_ps_lighter_gray{
+    background-color: var(--ps-lighter-gray);
 }
 
 .jumbotron{
@@ -85,7 +97,62 @@ img{max-width: 100%;}
     background-color: var(--ps-dark-gray);
 }
 
-@media screen and (max-width: 760px){
+.ps-plus{
+    background-color: var(--ps-light-gray);
+}
+
+.ps-now{
+    background-color: var(--ps-dark-blue);
+}
+
+.ps-plus-image,.ps-now-image{
+    min-width: 50%;
+}
+
+.ps-plus-image>img,.ps-now-image>img{
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.ps-now-text{
+    color: white;
+}
+
+.bg_ps_even_lighter_gray{
+    background-color: var(--ps-even-lighter-gray);
+}
+
+.twitter,
+.facebook,
+.instagram,
+.youtube{
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 65px;
+}
+
+.twitter{
+    background-color: var(--twitter);
+}
+
+.facebook{
+    background-color: var(--facebook);
+}
+
+.instagram{
+    background-color: #1F1F1F;
+}
+
+.youtube{
+    background-color: var(--youtube);
+}
+
+@media screen and (max-width: 770px){
+
+    .ps-plus-image,
+    .ps-now-image{
+        display: none;
+    }
 
     .product{
         width: calc(100% / 3);
