@@ -94,6 +94,10 @@ img{max-width: 100%;}
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
 }
 
+.jumbo-crash{
+    background-image: url("../img/avatar.svg");
+}
+
 .jumbotron{
     background-color: #fefff1;
     background-position: center center;

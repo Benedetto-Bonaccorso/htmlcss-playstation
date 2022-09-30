@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/72c428df3e.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +15,7 @@
 
         <div class="bg-black text-end">
             <a href="#">
-                <img src="./img/sony_logo.svg" class="sony-logo m-2" alt="Logo Sony">
+                <img src="../img/sony_logo.svg" class="sony-logo m-2" alt="Logo Sony">
             </a>
         </div>
 
@@ -23,7 +23,7 @@
 
             <div class="align-items-center d-flex">
                 <a href="#">
-                    <img src="./img/play_logo.svg" class="mx-3" alt="">
+                    <img src="../img/play_logo.svg" class="mx-3" alt="">
                 </a>
 
                 <div class="nav-links">
@@ -134,17 +134,48 @@
     <!--da aggiustare l'icona binocolo, non funziona la lente-->
 
     <main>
-        <div class="jumbotron jumbo-returnal d-flex text-white">
-            <div class="d-flex flex-column justify-content-end p-4">
-                <h2 class="my-4">Rompi il cerchio</h2>
 
-                <p class="w-550-px my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus dicta, enim quam repudiandae repellat sint reprehenderit! Suscipit, officia officiis vitae neque placeat voluptate. Quibusdam, fugit autem. Tenetur, rerum ea.</p>
-                <div class="button-wrapper-red">
-                    <a href="#" class="mt-4 text-white text-decoration-none py-2 px-3 rounded-pill bg_ps_red acquista-ora">Acquista ora</a>
-                </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-        </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active jumbotron jumbo-returnal">
+                <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-end p-4">
+                        <h2 class="my-4 text-start">Rompi il cerchio</h2>
+                        <p class="w-550-px my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus dicta, enim quam repudiandae repellat sint reprehenderit! Suscipit, officia officiis vitae neque placeat voluptate. Quibusdam, fugit autem. Tenetur, rerum ea.</p>
+                        <div class="button-wrapper-red">
+                            <a href="#" class="mt-4 text-white text-decoration-none py-2 px-3 rounded-pill bg_ps_red acquista-ora">Acquista ora</a>
+                        </div>
+                </div>
+              </div>
 
+              <div class="carousel-item active jumbotron jumbo-ittakestwo">
+                <div class="carousel-caption d-none d-md-block d-flex flex-column justify-content-end p-4">
+                        <h2 class="my-4 text-start w-25">Un'avventura cooperativa selvaggia ti attende</h2>
+                        <p class="w-550-px my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus dicta, enim quam repudiandae repellat sint reprehenderit! Suscipit, officia officiis vitae neque placeat voluptate. Quibusdam, fugit autem. Tenetur, rerum ea.</p>
+                        <div class="button-wrapper-red">
+                            <a href="#" class="mt-4 text-white text-decoration-none py-2 px-3 rounded-pill bg_ps_red acquista-ora">Acquista ora</a>
+                        </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        
         <div class="title-showcase d-flex justify-content-center">
             <div class="w-95 d-flex justify-content-evenly container-fluid">
                 <div class="row">
@@ -152,7 +183,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -161,7 +192,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -170,7 +201,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -179,7 +210,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -188,7 +219,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -197,7 +228,7 @@
                         <div class="sheet rounded-4">
                             <a href="#" class="p-1">
                                 <div class="game-wrapper">
-                                    <img src="./img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
+                                    <img src="../img/returnal-listing-thumb-01-ps5.jpg" class="rounded-4" alt="">
                                 </div>
                             </a>
                         </div>
@@ -225,7 +256,7 @@
                 </div>
 
                 <div class="ps5-image col-md-7">
-                    <img src="./img/playstation-5-thumb.png" alt="">
+                    <img src="../img/playstation-5-thumb.png" alt="">
                 </div>
 
             </div>
@@ -233,31 +264,31 @@
             <div class="playstation5-products  d-flex m-5">
                 <div class="product product-selected px-3 text-center">
                     <a href="#" class="text-decoration-none text-black">
-                        <img src="./img/playstation-5-thumb.png" alt="">
+                        <img src="../img/playstation-5-thumb.png" alt="">
                         <p>Console PS5</p>
                     </a>
                 </div>
                 <div class="product product-unselected px-3 text-center text">
                     <a href="#" class="text-decoration-none text-black">
-                        <img src="./img/joypad-thumb.png" alt="">
+                        <img src="../img/joypad-thumb.png" alt="">
                         <p>Controller wireless DualSense</p>
                     </a>
                 </div>
                 <div class="product product-unselected px-3 text-center">
                     <a href="#" class="text-decoration-none text-black">
-                        <img src="./img/headset-thumb.png" alt="">
+                        <img src="../img/headset-thumb.png" alt="">
                         <p>Cuffie wireless con microfono PULSE 3</p>
                     </a>
                 </div>
                 <div class="product product-unselected px-3 text-center">
                     <a href="#" class="text-decoration-none text-black">
-                        <img src="./img/remote-thumb.png" alt="">
+                        <img src="../img/remote-thumb.png" alt="">
                         <p>Telecomando Media5</p>
                     </a>
                 </div>
                 <div class="product product-unselected px-3 text-center">
                     <a href="#" class="text-decoration-none text-black">
-                        <img src="./img/camera-thumb.jpg" alt="">
+                        <img src="../img/camera-thumb.jpg" alt="">
                         <p>Telecamera HD</p>
                     </a>
                 </div>
@@ -287,7 +318,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -297,7 +328,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -307,7 +338,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -317,7 +348,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -327,7 +358,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -337,7 +368,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -347,7 +378,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -357,7 +388,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -367,7 +398,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -377,7 +408,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -387,7 +418,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/tony-hawks-pro-skater-1-2-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Tony Hawk's Pro Skater 1+2</p>
                                 </a>
                             </div>
@@ -397,7 +428,7 @@
                         <div class="sheet rounded-4">
                             <div class="nuova-uscita-wrapper">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
+                                    <img src="../img/crash-bandicoot-4-its-about-time-store-art.jpg" class="rounded-4" alt="">
                                     <p class="game-title text-white">Crash Bandicoot 4: it's About Time</p>
                                 </a>
                             </div>
@@ -415,7 +446,7 @@
             <div class="container-fluid text-start">
                 <div class="row align-items-baseline">
                     <div class="col-md-4 my-3">
-                        <img src="./img/ps4-slim-homepage-image-block.jpg" alt="">
+                        <img src="../img/ps4-slim-homepage-image-block.jpg" alt="">
                         <h4>PlayStation 4</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         <div class="button-wrapper-blue">
@@ -423,7 +454,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 my-3">
-                        <img src="./img/double11-202010-tw-psvr.jpg" alt="">
+                        <img src="../img/double11-202010-tw-psvr.jpg" alt="">
                         <h4>PlayStation VR 4</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="button-wrapper-blue">
@@ -431,7 +462,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 my-3">
-                        <img src="./img/dualshock-4-listing-thumb.jpg" alt="">
+                        <img src="../img/dualshock-4-listing-thumb.jpg" alt="">
                         <h4>Accessori</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="button-wrapper-blue">
@@ -445,14 +476,14 @@
 
         <div class="ps-plus section d-flex">
             <div class="ps-plus-text m-5">
-                <img src="./img/ps-plus-logo.png" alt="" class="py-4 w-50">
+                <img src="../img/ps-plus-logo.png" alt="" class="py-4 w-50">
                 <p class="py-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, itaque. Libero dolorem recusandae maxime quas saepe eaque velit distinctio ipsum deleniti, nisi non temporibus iste nesciunt omnis. Optio, deleniti voluptate!</p>
                 <div class="button-wrapper-lighter-gray">
                     <a href="#" class="my-5 text-decoration-none py-2 px-3 rounded-pill bg_ps_lighter_gray c-ps-blue">Acquista ora</a>
                 </div>
             </div>
             <div class="ps-plus-image">
-                <img src="./img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
+                <img src="../img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
             </div>
         </div>
 
@@ -464,17 +495,17 @@
                 <div class="row align-items-baseline">
                     <div class="col-md-4 my-3">
                         <a href="#">
-                            <img src="./img/playstation-store-games-under-20-spotlight.jpg" alt="">
+                            <img src="../img/playstation-store-games-under-20-spotlight.jpg" alt="">
                         </a>
                     </div>
                     <div class="col-md-4 my-3">
                         <a href="#">
-                            <img src="./img/playstation-store-golden-week-sale-spotlight.jpg" alt="">
+                            <img src="../img/playstation-store-golden-week-sale-spotlight.jpg" alt="">
                         </a>
                     </div>
                     <div class="col-md-4 my-3">
                         <a href="#">
-                            <img src="./img/playstation-store-free-to-play-spotlight.png" alt="">
+                            <img src="../img/playstation-store-free-to-play-spotlight.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -484,14 +515,14 @@
 
         <div class="ps-now section d-flex">
             <div class="ps-now-text m-5">
-                <img src="./img/ps-now-logo-two-column.png" alt="" class="py-4 w-50">
+                <img src="../img/ps-now-logo-two-column.png" alt="" class="py-4 w-50">
                 <p class="py-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, itaque. Libero dolorem recusandae maxime quas saepe eaque velit distinctio ipsum deleniti, nisi non temporibus iste nesciunt omnis. Optio, deleniti voluptate!</p>
                 <div class="button-wrapper-lighter-gray">
                     <a href="#" class="my-5 text-black text-decoration-none py-2 px-3 rounded-pill bg_ps_even_lighter_gray">Esplora PlayStation Now</a>
                 </div>
             </div>
             <div class="ps-now-image">
-                <img src="./img/ps-now-april-featured-image-block.png" alt="">
+                <img src="../img/ps-now-april-featured-image-block.png" alt="">
             </div>
         </div>
 
@@ -535,13 +566,13 @@
             <div class="footer-left">
                 <div class="d-flex">
                     <div class="play-logo-container d-flex flex-column">
-                        <img src="./img/play_logo.svg" class="play-logo" alt="">
+                        <img src="../img/play_logo.svg" class="play-logo" alt="">
                         <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-globe"></i> Country / Region: Italy</a>
                     </div>
                 </div>
 
                 <div class="sie visible-xl text-white py-5">
-                    <img src="./img/sie-logo.svg" class="w-25" alt="">
+                    <img src="../img/sie-logo.svg" class="w-25" alt="">
                     <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, magnam, nesciunt ab facere rem, dolorem optio earum alias natus aliquam doloremque perspiciatis corporis aliquid dolor aspernatur sit. Quaerat, quas iste?</p>
                 </div>
             </div>
@@ -616,7 +647,7 @@
             </div>
 
             <div class="sie visible-lg text-white mt-4">
-                <img src="./img/sie-logo.svg" class="w-25" alt="">
+                <img src="../img/sie-logo.svg" class="w-25" alt="">
                 <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, magnam, nesciunt ab facere rem, dolorem optio earum alias natus aliquam doloremque perspiciatis corporis aliquid dolor aspernatur sit. Quaerat, quas iste?</p>
             </div>
         </div>
